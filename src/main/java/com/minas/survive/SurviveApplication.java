@@ -1,13 +1,20 @@
-package com.minas.webside;
+package com.minas.survive;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
-public class WebsideApplication {
+public class SurviveApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebsideApplication.class, args);
+		try {
+			SpringApplication.run(SurviveApplication.class, args);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 }

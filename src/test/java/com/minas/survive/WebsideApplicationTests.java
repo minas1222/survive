@@ -1,4 +1,4 @@
-package com.minas.webside;
+package com.minas.survive;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
