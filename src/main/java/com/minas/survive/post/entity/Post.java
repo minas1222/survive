@@ -13,14 +13,14 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor(staticName = "of")
 public class Post {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "post_id", unique = true, nullable = false)
-    public String id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "post_id", unique = true, nullable = false)
+  public String id;
 
-    @Column(name = "title")
-    public String title;
+  @Column(name = "title")
+  public String title;
 
-    @Column(name = "context")
-    public String context;
+  @Column(name = "context")
+  public String context;
 }
