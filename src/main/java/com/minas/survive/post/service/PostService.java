@@ -31,4 +31,12 @@ public class PostService {
         
         return PostResponseDto.from(post);
     }
+
+    @Transactional
+    public long deletePost(long id) {
+        Post post = this.postRepository.findById(id).orElseGet(null);
+        this.postRepository.delete(post);
+        
+        return post.getId();
+    }
 }
