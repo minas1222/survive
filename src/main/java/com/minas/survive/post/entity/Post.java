@@ -1,9 +1,5 @@
 package com.minas.survive.post.entity;
 
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.UuidGenerator;
-import org.hibernate.validator.constraints.UUID;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,7 +15,7 @@ import lombok.NonNull;
 @Table(name = "tb_post")
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor(staticName = "of")
+@AllArgsConstructor
 public class Post {
 
     @Id
